@@ -4,3 +4,4 @@ dist
 vendor
 node_modules
 coverage
+.history
