@@ -52,6 +52,10 @@ export default class extends MyPage {
     this.app.$url.oilPrice.go();
   }
 
+  gotoMap() {
+    this.app.$url.gasStationMap.go();
+  }
+
   async onLoad(options) {
     // 使用 require 加载图片
     console.log('可以使用 require 的方法加载图片: %o', require('images/heart@3x.png'))

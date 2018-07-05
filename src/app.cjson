@@ -13,6 +13,7 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/oilPrice/oilPrice",
+    "pages/gasStationMap/gasStationMap",
     /*# INJECT_END #*/
   ],
   "window": {
