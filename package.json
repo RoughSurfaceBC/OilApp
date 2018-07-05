@@ -1,0 +1,25 @@
+{
+  "name": "minapp",
+  "version": "1.0.0",
+  "description": "A wonderful miniapp application",
+  "scripts": {
+    "test": "echo 0",
+    "clear": "minapp clear dist",
+    "dev": "minapp dev",
+    "build": "minapp build --publicPath http://your.static.server/"
+  },
+  "author": "t440-22-PC\t440-22<526338545@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@minapp/component-toast": "^2.0.0",
+    "@minapp/core": "^2.0.0",
+    "@minapp/mobx": "^2.0.0",
+    "@minapp/wx": "latest",
+    "babel-runtime": "^6.24.0",
+    "mobx": "^3.5.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.3"
+  }
+}
