@@ -19,4 +19,5 @@
   <button size="mini" bind:tap="increase">在 Page 中增加 Count: {{conterStart}}</button>
   双向绑定<counter-a start.sync="{{conterStart}}" />
   单向绑定<counter-b start="{{conterStart}}" />
+  <button bind:tap="gotoPrice">跳转到价格</button>
 </view>

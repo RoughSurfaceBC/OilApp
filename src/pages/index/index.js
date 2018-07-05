@@ -48,6 +48,10 @@ export default class extends MyPage {
     this.setDataSmart({conterStart: this.data.conterStart + 1})
   }
 
+  gotoPrice() {
+    this.app.$url.oilPrice.go();
+  }
+
   async onLoad(options) {
     // 使用 require 加载图片
     console.log('可以使用 require 的方法加载图片: %o', require('images/heart@3x.png'))

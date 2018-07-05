@@ -14,11 +14,18 @@ export default class extends MyApp {
     wxp.setStorageSync('logs', logs)
 
     // 登录
-    let {code} = await wxp.login()
+    let {code} = await wxp.login().then(result => {
+      return result
+    })
     console.log('微信 code %o', code) // 发送 code 到后台换取 openId, sessionKey, unionId
 
     // 获取用户信息
-    let setting = await wxp.getSetting()
+    let setting = await wxp.getSetting().then(res => {
+      console.log('getSettingRes', res)
+      return res
+    }, err => {
+      console.log('getSettingErr', err)
+    })
     if (setting.authSetting['scope.userInfo']) { // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
       // 可以将 getUserInfo 返回的对象发送给后台解码出 unionId
       let res = await wxp.getUserInfo()
