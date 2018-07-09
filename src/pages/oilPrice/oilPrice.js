@@ -5,10 +5,19 @@ import {pagify, MyPage, wxp} from 'base/'
 @pagify()
 export default class extends MyPage {
   data = {
-
+    priceList: [
+      {title: '93#汽油', price: 12.50},
+      {title: '柴油', price: 23.33},
+      {title: '63#汽油', price: 14.40}
+    ],
+    city: ''
   }
 
   async onLoad(options) {
-    console.log(await wxp.getUserInfo())
+  }
+
+  onReady() {
+    console.log('store-userInfo', this.store.userInfo)
+    this.setDataSmart({city: this.store.userInfo.city})
   }
 }

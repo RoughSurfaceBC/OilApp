@@ -31,6 +31,7 @@ export default class extends MyApp {
       let res = await wxp.getUserInfo()
       console.log('微信 userInfo %o', res.userInfo)
       this.store.userInfo = res.userInfo  // 将用户信息存入 store 中
+      // this.$url.oilPrice.go();
     } else {
       console.log('没有授权过')
     }

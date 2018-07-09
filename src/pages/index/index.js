@@ -13,7 +13,8 @@ export default class extends MyPage {
     toastVisble: false,
 
     motto: '',
-    canIUseOpenButton: wxp.canIUse('button.open-type.getUserInfo')
+    canIUseOpenButton: wxp.canIUse('button.open-type.getUserInfo'),
+    topTabs: ['头条', '八卦', '周边']
   }
 
   onShow() {

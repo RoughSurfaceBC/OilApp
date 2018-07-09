@@ -3,6 +3,7 @@
   "usingComponents": {
     "counter-a": "/components/counter/counter",
     "counter-b": "/components/counter/counter",
+    "top-tabs": "/components/topTabs/topTabs",
     "toast": "~/@minapp/component-toast" // 加载 npm 包中的组件
   }
 }

@@ -1,3 +1,5 @@
+<top-tabs tabs="{{topTabs}}"></top-tabs>
+
 <view class="container">
   <view class="userinfo">
     <button wx:if="{{!userInfo && canIUseOpenButton}}" open-type="getUserInfo" bindgetuserinfo="onClickOpenButton"> 获取头像昵称 </button>

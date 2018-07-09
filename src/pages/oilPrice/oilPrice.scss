@@ -4,7 +4,21 @@
   注意：文件为空，编译时不会生成新文件
 */
 
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  .city {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 24px;
+  }
+}
+
 .logo {
-  width: 50px;
-  height: 50px;
+  margin: 25px 0;
+  width: 60px;
+  height: 60px;
 }
