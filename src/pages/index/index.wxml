@@ -22,4 +22,5 @@
   双向绑定<counter-a start.sync="{{conterStart}}" />
   单向绑定<counter-b start="{{conterStart}}" />
   <button bind:tap="gotoPrice">跳转到价格</button>
+  <button bind:tap="gotoMap">跳转到地图</button>
 </view>
