@@ -11,10 +11,6 @@ export default class extends MyComponent {
     tabs: {
       value: [],
       type: Array
-    },
-    tabTap: {
-      value: () => {},
-      type: Function
     }
   }
 
@@ -30,6 +26,13 @@ export default class extends MyComponent {
    */
   onPropUpdate(prop, newValue, oldValue) {
 
+  }
+
+  onReady() {
+  }
+
+  tabTap(event) {
+    console.log(event)
   }
 }
 

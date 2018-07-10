@@ -1,4 +1,4 @@
-<top-tabs tabs="{{topTabs}}"></top-tabs>
+<top-tabs tabs="{{topTabs}}" tab-tap="{{topTabsTap}}"></top-tabs>
 
 <view class="container">
   <view class="userinfo">

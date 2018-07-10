@@ -57,6 +57,12 @@ export default class extends MyPage {
     this.app.$url.gasStationMap.go();
   }
 
+  methods = {
+    topTabsTap: (index) => {
+      console.log('index', index)
+    }
+  }
+
   async onLoad(options) {
     // 使用 require 加载图片
     console.log('可以使用 require 的方法加载图片: %o', require('images/heart@3x.png'))

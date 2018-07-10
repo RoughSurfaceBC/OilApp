@@ -6,5 +6,5 @@
 -->
 
 <view>
-  <div wx:for="{{tabs}}" wx:key="{{index}}" bind:tap="{{item.tabTap}}">{{item}}</div>
+  <div wx:for="{{tabs}}" wx:key="{{index}}" bind:tap="tabTap">{{item}}</div>
 </view>
