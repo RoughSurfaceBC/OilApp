@@ -8,6 +8,7 @@
 <view class="logoContainer">
   <div class="city">城市：{{city}}</div>
   <image class="logo" src="images/timg@3x.jpg"></image>
+  <view class="container"></view>
 </view>
 
 <price-tags wx:for="{{priceList}}" wx:key="{{index}}" title="{{item.title}}" price="{{item.price}}"></price-tags>

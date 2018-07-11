@@ -5,6 +5,7 @@ Author Mora <qiuzhongleiabc@126.com> (https://github.com/qiu8310)
 
 import {MobxApp} from '@minapp/mobx'
 
-export class MyApp extends MobxApp {
 
+export class MyApp extends MobxApp {
+  
 }

@@ -18,7 +18,7 @@ export default class extends MyComponent {
    * 组件的初始数据
    */
   data = {
-
+    curIndex: 0
   }
 
   /**
@@ -32,7 +32,9 @@ export default class extends MyComponent {
   }
 
   tabTap(event) {
-    console.log(event)
+    const tabIndex = event.currentTarget.dataset.tabIndex
+    this.setDataSmart({curIndex: tabIndex})
+    this.triggerEvent('tapEvent', tabIndex)
   }
 }
 

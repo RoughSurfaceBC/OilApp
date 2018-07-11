@@ -16,6 +16,7 @@
     "@minapp/mobx": "^2.0.0",
     "@minapp/wx": "latest",
     "babel-runtime": "^6.24.0",
+    "flyio": "^0.5.9",
     "mobx": "^3.5.1"
   },
   "devDependencies": {

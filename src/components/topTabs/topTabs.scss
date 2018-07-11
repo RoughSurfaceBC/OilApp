@@ -3,3 +3,20 @@
 
   注意：文件为空，编译时不会生成新文件
 */
+.component {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #f4f5f6;
+}
+
+.item {
+  padding: 10px;
+  font-size: 32px;
+}
+
+.cur {
+  color: red !important;
+}

@@ -5,6 +5,6 @@
   1. 如果没有语法高亮，且你使用的是 vscode 编辑器的话，建义在 vscode 插件库中安装 minapp-vscode 插件
 -->
 
-<view>
-  <div wx:for="{{tabs}}" wx:key="{{index}}" bind:tap="tabTap">{{item}}</div>
+<view class="component">
+  <div class="item {{curIndex === index ? 'cur' : ''}}" wx:for="{{tabs}}" wx:key="{{index}}" bind:tap="tabTap" data-tab-index="{{index}}">{{item}}</div>
 </view>

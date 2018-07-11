@@ -1,6 +1,6 @@
-<top-tabs tabs="{{topTabs}}" tab-tap="{{topTabsTap}}"></top-tabs>
+<top-tabs tabs="{{topTabs}}" bind:tapEvent="topTabsTap"></top-tabs>
 
-<view class="container">
+<view class="container" wx:if="{{tabcurIndex === 0}}">
   <view class="userinfo">
     <button wx:if="{{!userInfo && canIUseOpenButton}}" open-type="getUserInfo" bindgetuserinfo="onClickOpenButton"> 获取头像昵称 </button>
     <block wx:else>
@@ -23,4 +23,12 @@
   单向绑定<counter-b start="{{conterStart}}" />
   <button bind:tap="gotoPrice">跳转到价格</button>
   <button bind:tap="gotoMap">跳转到地图</button>
+</view>
+
+<view class="container" wx:if="{{tabcurIndex === 1}}">
+  八卦新闻
+</view>
+
+<view class="container" wx:if="{{tabcurIndex === 2}}">
+  周边新闻
 </view>
