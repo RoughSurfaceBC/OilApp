@@ -64,15 +64,6 @@ export default class extends MyPage {
   }
 
   async onLoad(options) {
-    this.fly.get('http://www.qq.com/user', {
-      id: 123
-    })
-    .then(function (response) {
-      console.log(response);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
     // 使用 require 加载图片
     console.log('可以使用 require 的方法加载图片: %o', require('images/heart@3x.png'))
     // 轻松读取全局数据

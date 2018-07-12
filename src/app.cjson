@@ -14,6 +14,8 @@
     "pages/logs/logs",
     "pages/oilPrice/oilPrice",
     "pages/gasStationMap/gasStationMap",
+    "pages/translation/translation",
+    "pages/conversion/conversion",
     /*# INJECT_END #*/
   ],
   "window": {
@@ -21,5 +23,37 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#ff0000",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "新闻读报",
+      "iconPath": "./images/index.png",
+      "selectedIconPath": "./images/index.png",
+    }, {
+      "pagePath": "pages/oilPrice/oilPrice",
+      "text": "今日油价",
+      "iconPath": "./images/oilPrice.png",
+      "selectedIconPath": "./images/oilPrice.png",
+    }, {
+      "pagePath": "pages/translation/translation",
+      "text": "石油词典",
+      "iconPath": "./images/translation.png",
+      "selectedIconPath": "./images/translation.png",
+    }, {
+      "pagePath": "pages/gasStationMap/gasStationMap",
+      "text": "加油雷达",
+      "iconPath": "./images/map.png",
+      "selectedIconPath": "./images/map.png",
+    }, {
+      "pagePath": "pages/conversion/conversion",
+      "text": "石油换算",
+      "iconPath": "./images/conversion.png",
+      "selectedIconPath": "./images/conversion.png",
+    }]
   }
 }

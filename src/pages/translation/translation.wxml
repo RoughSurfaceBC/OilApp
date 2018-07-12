@@ -5,9 +5,4 @@
   1. 如果没有语法高亮，且你使用的是 vscode 编辑器的话，建义在 vscode 插件库中安装 minapp-vscode 插件
 -->
 
-<view class="logoContainer">
-  <div class="city">城市：{{city}}</div>
-  <image class="logo" src="images/timg@3x.jpg"></image>
-</view>
-
-<price-tags wx:for="{{priceList}}" wx:key="{{index}}" title="{{item.title}}" price="{{item.price}}"></price-tags>
+<text>page: translation</text>
