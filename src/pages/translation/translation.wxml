@@ -5,4 +5,25 @@
   1. 如果没有语法高亮，且你使用的是 vscode 编辑器的话，建义在 vscode 插件库中安装 minapp-vscode 插件
 -->
 
-<text>page: translation</text>
+<view>
+  
+</view>
+
+<view class="h2w__div markdown-text"><view class="h2w__p">直接贴代码吧：</view>
+<view class="h2w__pre prettyprint language-javascript"><text class="h2w__code">const jwt = require(&#x27;jsonwebtoken&#x27;)
+
+var token
+token = jwt.sign({ foo: &#x27;bar&#x27; }, &#x27;shhhhh&#x27;)
+console.log(token)
+
+token = jwt.sign({ foo: &#x27;bar&#x27; }, &#x27;shhhhh&#x27;)
+console.log(token)
+
+token = jwt.sign({ foo: &#x27;bar&#x27; }, &#x27;shhhhh&#x27;)
+console.log(token)
+
+</text></view><view class="h2w__p">第一次执行这个代码，连续生成并且打印三次token，三次打印出的token都是一样的。</view>
+<view class="h2w__p">第二次执行这个代码，生成的token与第一次执行时不一样。</view>
+<view class="h2w__p">也就是不同的进程，生成的token是不一样的。为什么？</view>
+<view class="h2w__p">我理解的的HAC算法应该是固定的输入就有固定的输出</view>
+</view>

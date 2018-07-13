@@ -6,7 +6,6 @@ import md5 from 'md5'
 @pagify()
 export default class extends MyPage {
   data = {
-
   }
 
   async onLoad(options) {

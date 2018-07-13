@@ -1,7 +1,7 @@
 <top-tabs tabs="{{topTabs}}" bind:tapEvent="topTabsTap"></top-tabs>
 
-<view class="container" wx:if="{{tabcurIndex === 0}}">
-  <view class="userinfo">
+<view name="ask" class="container" wx:if="{{tabcurIndex === 0}}">
+  <!-- <view class="userinfo">
     <button wx:if="{{!userInfo && canIUseOpenButton}}" open-type="getUserInfo" bindgetuserinfo="onClickOpenButton"> 获取头像昵称 </button>
     <block wx:else>
       <image bind:tap="onClickAvatarImage" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
@@ -22,13 +22,14 @@
   双向绑定<counter-a start.sync="{{conterStart}}" />
   单向绑定<counter-b start="{{conterStart}}" />
   <button bind:tap="gotoPrice">跳转到价格</button>
-  <button bind:tap="gotoMap">跳转到地图</button>
+  <button bind:tap="gotoMap">跳转到地图</button> -->
+  <view wx:for="{{ask}}" wx:key="{{item.id}}">{{item.title}}</view>
 </view>
 
-<view class="container" wx:if="{{tabcurIndex === 1}}">
-  八卦新闻
+<view name="share" class="container" wx:if="{{tabcurIndex === 1}}">
+  <view wx:for="{{share}}" wx:key="{{item.id}}">{{item.title}}</view>
 </view>
 
-<view class="container" wx:if="{{tabcurIndex === 2}}">
-  周边新闻
+<view name="job" class="container" wx:if="{{tabcurIndex === 2}}">
+  <view wx:for="{{job}}" wx:key="{{item.id}}">{{item.title}}</view>
 </view>

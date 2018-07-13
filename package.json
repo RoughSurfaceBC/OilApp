@@ -19,7 +19,8 @@
     "flyio": "^0.5.9",
     "md5": "^2.2.1",
     "mobx": "^3.5.1",
-    "save": "^2.3.2"
+    "save": "^2.3.2",
+    "towxml": "^1.5.17"
   },
   "devDependencies": {
     "node-sass": "^4.9.0",
